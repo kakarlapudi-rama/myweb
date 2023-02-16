@@ -13,13 +13,7 @@ pipeline {
                 git credentialsId: 'javahome2', url: 'https://github.com/lakshmiprasad2019/myweb.git'
             }    
         }
-        stage('Dummystage') { 
-            steps {
-                sh """
-                   echo "this is dummystage"
-                     """
-            }    
-        }
+        
         stage('Terraform Ininitialization') {
             steps {
                 sh """
